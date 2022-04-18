@@ -11,7 +11,20 @@ First of all connect to Hack The Box network via VPN and spanw an instance of th
 # Task 1
 
 How many TCP ports are open on the machine?
-*
+
+    └─$ nmap 10.129.92.2 -p- -oN initial.nmap
+    Starting Nmap 7.92 ( https://nmap.org ) at 2022-04-18 10:31 EDT
+    Stats: 0:00:18 elapsed; 0 hosts completed (1 up), 1 undergoing Connect Scan
+    Connect Scan Timing: About 2.09% done; ETC: 10:46 (0:14:02 remaining)
+    Nmap scan report for 10.129.92.2
+    Host is up (0.28s latency).
+    Not shown: 65533 filtered tcp ports (no-response)
+    PORT     STATE SERVICE
+    80/tcp   open  http
+    5985/tcp open  wsman
+
+    Nmap done: 1 IP address (1 host up) scanned in 540.06 seconds
+
 
 # Task 2
 
