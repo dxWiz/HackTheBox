@@ -54,3 +54,4 @@ Once you are in, `mget` all the files in Shares folder. Use `prompt` to get rid 
     HELP prompt:
       toggle prompting for filenames for mget and mput
 
+Crack the .zip with `zip2john` and `john` and get the .pfx file
