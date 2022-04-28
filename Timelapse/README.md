@@ -70,4 +70,4 @@ Run the following command to extract the certificate:
 
 Use the following command to get the foothold
 
-    └─$ evil-winrm -i 10.10.11.152 -r timelapse -S -c legacyy.crt -k private.key
+    └─$ evil-winrm -i 10.10.11.152 -S -c legacyy.crt -k private.key
