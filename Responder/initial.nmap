@@ -1,0 +1,20 @@
+# Nmap 7.92 scan initiated Mon Apr 18 22:40:09 2022 as: nmap -sC -sV -v -p- -T4 -oN initial.nmap 10.129.92.246
+Increasing send delay for 10.129.92.246 from 0 to 5 due to 74 out of 184 dropped probes since last increase.
+Increasing send delay for 10.129.92.246 from 5 to 10 due to 11 out of 24 dropped probes since last increase.
+Nmap scan report for 10.129.92.246
+Host is up (0.26s latency).
+Not shown: 65533 filtered tcp ports (no-response)
+PORT     STATE SERVICE VERSION
+80/tcp   open  http    Apache httpd 2.4.52 ((Win64) OpenSSL/1.1.1m PHP/8.1.1)
+|_http-server-header: Apache/2.4.52 (Win64) OpenSSL/1.1.1m PHP/8.1.1
+|_http-title: Site doesn't have a title (text/html; charset=UTF-8).
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+5985/tcp open  http    Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-title: Not Found
+|_http-server-header: Microsoft-HTTPAPI/2.0
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Mon Apr 18 23:11:22 2022 -- 1 IP address (1 host up) scanned in 1873.52 seconds
