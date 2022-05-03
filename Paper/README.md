@@ -68,6 +68,8 @@ Let's browse to `http://office.paper` and we can see that it is a forum page for
     Shellcodes: No Results
     Papers: No Results
 
-[This link](https://www.exploit-db.com/exploits/47690) has some interesting tricks to reveal hidden content.
+[This link](https://www.exploit-db.com/exploits/47690) has some interesting tricks to reveal hidden content and with that we found a secret registration link to the paper company's employee chat system. Let's register that link hostname to /etc/hosts before we proceed further.
+
+After registration, we are in the chat system and by going through the messages we knkow that we are able to interact with the bot to do two important things. To get files and to list files.
 
 
