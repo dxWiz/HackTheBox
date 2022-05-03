@@ -126,5 +126,5 @@ After registration, we are in the chat system and by going through the messages 
     dwight❌1004:1004::/home/dwight:/bin/bash
     <!=====End of file ../../../etc/passwd=====>
 
-
+Let's find some other interesting things in the home director for the creator of the bot `dwight` and we notice a folder named `hubot`
 
